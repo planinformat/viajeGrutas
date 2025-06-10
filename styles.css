@@ -1,0 +1,347 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* Header */
+header {
+    background-image: url('../imagenes/textura.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    animation: fadeInUp 1s ease forwards;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    background-color: #e0e0e0;
+    flex-wrap: wrap;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.about img {
+    width: 250px;
+    border-radius: 50%;
+    margin-right: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.about img:hover {
+    transform: scale(1.05);
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Skills Section */
+.skills {
+    /*background-image: url('../imagenes/fondoM.jpg');*/
+    background-color: gray;
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skills-container div {
+    width: 250px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 15px;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skills-container div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skills-container img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 3rem 1rem;
+    text-align: center;
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.contact-section {
+    background: url('../imagenes/textura.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 4rem 2rem;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-item p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: white;
+    color: #333;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.swiper-pagination-bullet {
+    width: 20px; 
+    height: 20px;
+    background-color: white; 
+    border: 2px solid #f0efed;
+    border-radius: 50%;
+    margin: 0 8px;
+    transition: 0.3s ease;
+    opacity: 1; 
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #cba25e; 
+    border-color: white; 
+    transform: scale(1.4);
+  }
+.swiper-pagination .owl-dots {
+    margin-top: 30px;
+    text-align: center;
+}  
+  
+.swiper-pagination .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #DA9F5B;
+    transition: .5s;
+  }
+  
+  .swiper-pagination .owl-dot.active {
+    width: 40px;
+    background: #33211D;
+  }
+  
+  .swiper-pagination .owl-item img {
+    width: 80px;
+    height: 80px;
+  }
+  
+    .swiper-slide-active {
+        transform: scale(2.2); 
+        z-index: 1; 
+    }
+
+    .swiper-slide-active iframe {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+    }
+
+    .swiper-slide:not(.swiper-slide-active) {
+        transform: scale(0.95); 
+    }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about img {
+        margin: 0 0 1.5rem;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-container div {
+        width: 80%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+    .contact-section {
+    background: url('../imagenes/textura.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 4rem 2rem;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-item p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: white;
+    color: white;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter-form button {
+    background: #d39e4e;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background: #b8843f;
+}
+
+}
